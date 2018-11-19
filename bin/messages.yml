@@ -1,0 +1,64 @@
+prefix: "&2[&aGameBoosters&2]"
+
+booster:
+  message: "&6Booster: %booster% &fby %player% - &o(%time%)"
+  activate: "&6%player% has activated a %booster%!"
+  ending: "&c%player%'s %booster% has worn out!"
+
+
+
+inventory:
+  addToQueue: "&6You added a %booster% to the Booster Queue!"
+  noBoosters: "&cYou do not have any %booster%s!"
+
+
+
+command:
+  generic:
+    consoleDeny: "&cOnly a Player can use this command!"
+    invaid-booster: "&cInvalid Booster: &f%booster%"
+
+  booster:
+    help: "&cIncorrect Usage! /booster [activate/queue/admin]"
+    
+    queue:
+      header: "&6GameBooster Queue:"
+      body: "&6%number%&e. %booster% -- %player%"
+      noBoosters: "&eNo boosters in queue!"
+      
+    admin:
+      help: "&cIncorrect Usage! /booster admin <start/stop/settime/give/queueremove> [args]"
+      noPermission: "&cYou do not have permission for /booster admin!"
+      
+      queueremove:
+        help: "&cIncorrect Usage! /booster admin queueremove <index>"
+        successful: "&6You removed queued booster #%number%."
+        invalidIndex: "&cThere is no booster in index #%number%."
+      
+      give:
+        help: "&cIncorrect Usage! /booster admin give <player> <booster>"
+        received: "&6You have been given a %booster%!"
+        given: "&6%player% was given a %booster%!"
+        
+      start:
+        help: "&cIncorrect Usage! /booster admin start <booster> [owner]"
+        consoleHelp: "&cAs the console, you must specify an owner!"
+        successful: "&6Force-Started a new %booster%!"
+      
+      settime:
+        help: "&cIncorrect Usage! /booster admin settime [seconds]"
+        successful: "&6Set the time of the booster to %time% seconds!"
+
+      stop:
+        successful: "&6You successfully stopped the active booster!"
+        noBooster: "&cThere is no active booster!"
+        
+    activate:
+      help: "&cIncorrect Usage! /booster activate <type>"
+      consoleHelp: "&cUse /booster admin start <type> <owner> instead!"
+
+  thank:
+    selftip: "&cYou cannot tip yourself!"
+    alreadyTipped: "&cYou already tipped %player% for their booster."
+    successful: "&6Tipped %player% for their booster! You will both receive 15 coins!"
+    noBooster: "&cThere is no currently active booster!"

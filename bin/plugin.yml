@@ -1,0 +1,17 @@
+main: net.iccraft.gameboosters.BoosterMain
+version: 1.0.0
+depend: [Vault]
+
+name: GameBoosters
+author: ipodtouch0218
+
+commands:
+  thank:
+    usage: /<command>
+    description: Thanks a user for using their booster!
+    permission: booster.thank
+    aliases: [tip, thanks]
+  booster:
+    usage: /<command>
+    description: Main GameBoosters command!
+    aliases: [gamebooster, boosters]
