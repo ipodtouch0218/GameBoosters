@@ -4,8 +4,7 @@ import org.bukkit.Material;
 
 public enum BoosterType {
 
-	@SuppressWarnings("deprecation")
-	XP (Material.EXP_BOTTLE, "XP Booster"),
+	XP (Material.EXPERIENCE_BOTTLE, "XP Booster"),
 	FLY (Material.ELYTRA, "Fly Booster"),
 	SPEED (Material.FEATHER, "Speed Booster"),
 	MCMMO (Material.BLAZE_POWDER, "McMMO XP Booster");
